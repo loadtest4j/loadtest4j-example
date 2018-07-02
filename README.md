@@ -14,14 +14,12 @@ A working example of loadtest4j.
 ### In Maven
 
 ```bash
-# Run all tests in development mode
+# Runs all tests in development mode
 mvn verify
 
-# Run load tests against a local Service Under Test
-mvn surefire:test@load
-
-# Run load tests against a remote Service Under Test
-mvn surefire:test@load -P production
+# Runs load tests against the production Service Under Test
+# (test-compile compiles code and generates loadtest4j.properties)
+mvn test-compile surefire:test@load -P production
 ```
 
 ### In IDE

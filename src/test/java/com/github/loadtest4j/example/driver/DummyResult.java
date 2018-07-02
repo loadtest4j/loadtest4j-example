@@ -7,13 +7,21 @@ import java.time.Duration;
 import java.util.Optional;
 
 class DummyResult implements DriverResult {
-    
+
+    private final long ok;
+    private final long ko;
+
+    DummyResult(long ok, long ko) {
+        this.ok = ok;
+        this.ko = ko;
+    }
+
     public long getOk() {
-        return 0;
+        return ok;
     }
     
     public long getKo() {
-        return 0;
+        return ko;
     }
     
     public Duration getActualDuration() {

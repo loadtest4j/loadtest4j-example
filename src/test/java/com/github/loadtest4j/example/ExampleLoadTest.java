@@ -27,7 +27,7 @@ public class ExampleLoadTest {
 
         assertThat(result)
                 .satisfiesMaxResponseTime(Duration.ofSeconds(7))
-                .satisfiesPercentKo(0.1)
+                .satisfiesPercentKo(0)
                 .satisfiesRequestsPerSecond(0);
     }
 }
