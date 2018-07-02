@@ -20,6 +20,7 @@ import static com.github.loadtest4j.example.ResultAssert.assertThat;
 @Category(LoadTest.class)
 public class ExampleLoadTest {
 
+    // FIXME Only run this in the 'development' environment
     @ClassRule
     public static final DropwizardAppRule<ExampleConfiguration> RULE = new DropwizardAppRule<>(ExampleApplication.class, ResourceHelpers.resourceFilePath("dev.yaml"));
 

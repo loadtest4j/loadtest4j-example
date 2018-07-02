@@ -5,6 +5,13 @@ import org.assertj.core.api.AbstractAssert;
 
 import java.time.Duration;
 
+/**
+ * This custom assertion class describes the SLA for the Service Under Test.
+ *
+ * If you use AssertJ or a similar library that supports custom assertions, consider writing a custom assertion like
+ * this. Add assertion methods to describe each aspect of the Service Under Test performance that you care about. For
+ * example, the p50 (median), p90, p99, p100 (max) Response Times.
+ */
 public class ResultAssert extends AbstractAssert<ResultAssert, Result> {
 
     private ResultAssert(Result result) {
