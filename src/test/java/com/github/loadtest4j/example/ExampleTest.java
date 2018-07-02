@@ -10,7 +10,7 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
+import static com.github.loadtest4j.example.ResultAssert.assertThat;
 
 public class ExampleTest {
 
@@ -18,12 +18,13 @@ public class ExampleTest {
 
     @Test
     public void testLoad() {
-        final List<Request> requests = Collections.singletonList(Request.get("/"));
+        final List<Request> requests = Collections.singletonList(Request.get("/example"));
 
         final Result result = loadTester.run(requests);
 
-        assertEquals(0, result.getPercentKo(), 0.001);
-        assertEquals(0, result.getRequestsPerSecond(), 0.001);
-        assertEquals(Duration.ZERO, result.getResponseTime().getPercentile(100));
+        assertThat(result)
+                .satisfiesMaxResponseTime(Duration.ofSeconds(7))
+                .satisfiesPercentKo(0.1)
+                .satisfiesRequestsPerSecond(0);
     }
 }
