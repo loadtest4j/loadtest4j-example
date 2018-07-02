@@ -26,5 +26,6 @@ mvn surefire:test@load -P production
 
 ### In IDE
 
-1. Tick the box in the relevant part of your IDE to enable the Maven profile you want. **Only enable one loadtest4j profile at a time.**
-2. Hit Play to run the tests using that profile.
+1. Tick the box in your IDE to enable **one** of your loadtest4j Maven profiles.
+2. (Local mode) Start the Service Under Test.
+3. Hit Play to run the tests using that profile.

@@ -5,9 +5,6 @@ import com.github.loadtest4j.loadtest4j.LoadTester;
 import com.github.loadtest4j.loadtest4j.factory.LoadTesterFactory;
 import com.github.loadtest4j.loadtest4j.Request;
 import com.github.loadtest4j.loadtest4j.Result;
-import io.dropwizard.testing.ResourceHelpers;
-import io.dropwizard.testing.junit.DropwizardAppRule;
-import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 
@@ -19,10 +16,6 @@ import static com.github.loadtest4j.example.ResultAssert.assertThat;
 
 @Category(LoadTest.class)
 public class ExampleLoadTest {
-
-    // FIXME Only run this in the 'development' environment
-    @ClassRule
-    public static final DropwizardAppRule<ExampleConfiguration> RULE = new DropwizardAppRule<>(ExampleApplication.class, ResourceHelpers.resourceFilePath("dev.yaml"));
 
     private final LoadTester loadTester = LoadTesterFactory.getLoadTester();
 
