@@ -1,6 +1,6 @@
 package com.github.loadtest4j.example.driver;
 
-import com.github.loadtest4j.loadtest4j.ResponseTime;
+import com.github.loadtest4j.loadtest4j.driver.DriverResponseTime;
 import com.github.loadtest4j.loadtest4j.driver.DriverResult;
 
 import java.time.Duration;
@@ -28,7 +28,7 @@ class DummyResult implements DriverResult {
         return Duration.ZERO;
     }
     
-    public ResponseTime getResponseTime() {
+    public DriverResponseTime getResponseTime() {
         return new DummyResponseTime();
     }
     
