@@ -1,6 +1,6 @@
-package com.github.loadtest4j.example;
+package org.loadtest4j.example;
 
-import com.github.loadtest4j.example.junit.UnitTest;
+import org.loadtest4j.example.junit.UnitTest;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 

@@ -1,6 +1,6 @@
-package com.github.loadtest4j.example;
+package org.loadtest4j.example;
 
-import com.github.loadtest4j.example.junit.LoadTest;
+import org.loadtest4j.example.junit.LoadTest;
 import com.github.loadtest4j.loadtest4j.LoadTester;
 import com.github.loadtest4j.loadtest4j.factory.LoadTesterFactory;
 import com.github.loadtest4j.loadtest4j.Request;

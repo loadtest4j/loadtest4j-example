@@ -1,4 +1,4 @@
-package com.github.loadtest4j.example;
+package org.loadtest4j.example;
 
 import com.codahale.metrics.health.HealthCheck;
 
