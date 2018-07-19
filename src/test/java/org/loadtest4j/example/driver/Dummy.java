@@ -1,9 +1,9 @@
 package org.loadtest4j.example.driver;
 
-import com.github.loadtest4j.loadtest4j.driver.Driver;
-import com.github.loadtest4j.loadtest4j.driver.DriverRequest;
-import com.github.loadtest4j.loadtest4j.driver.DriverResult;
 import org.glassfish.jersey.client.JerseyClientBuilder;
+import org.loadtest4j.driver.Driver;
+import org.loadtest4j.driver.DriverRequest;
+import org.loadtest4j.driver.DriverResult;
 
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Invocation;

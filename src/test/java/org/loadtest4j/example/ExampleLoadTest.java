@@ -1,12 +1,12 @@
 package org.loadtest4j.example;
 
-import org.loadtest4j.example.junit.LoadTest;
-import com.github.loadtest4j.loadtest4j.LoadTester;
-import com.github.loadtest4j.loadtest4j.factory.LoadTesterFactory;
-import com.github.loadtest4j.loadtest4j.Request;
-import com.github.loadtest4j.loadtest4j.Result;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
+import org.loadtest4j.LoadTester;
+import org.loadtest4j.Request;
+import org.loadtest4j.Result;
+import org.loadtest4j.example.junit.LoadTest;
+import org.loadtest4j.factory.LoadTesterFactory;
 
 import java.time.Duration;
 import java.util.Collections;

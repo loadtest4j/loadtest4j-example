@@ -1,7 +1,7 @@
 package org.loadtest4j.example.driver;
 
-import com.github.loadtest4j.loadtest4j.driver.DriverResponseTime;
-import com.github.loadtest4j.loadtest4j.driver.DriverResult;
+import org.loadtest4j.driver.DriverResponseTime;
+import org.loadtest4j.driver.DriverResult;
 
 import java.time.Duration;
 import java.util.Optional;
