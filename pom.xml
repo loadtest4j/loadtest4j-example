@@ -4,13 +4,23 @@
     <groupId>com.github.loadtest4j</groupId>
     <artifactId>loadtest4j-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <name>${project.artifactId}</name>
+    <url>https://github.com/loadtest4j/loadtest4j-example</url>
     <description>A working example of loadtest4j.</description>
 
     <licenses>
         <license>
-            <name>MIT</name>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/mit-license</url>
         </license>
     </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/loadtest4j/loadtest4j-example.git</connection>
+        <developerConnection>scm:git:ssh://github.com:loadtest4j/loadtest4j-example.git</developerConnection>
+        <url>https://github.com/loadtest4j/loadtest4j-example</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -178,9 +188,9 @@
             <version>${dropwizard.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.loadtest4j</groupId>
+            <groupId>org.loadtest4j</groupId>
             <artifactId>loadtest4j</artifactId>
-            <version>0.14.0</version>
+            <version>0.14.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -196,11 +206,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
 </project>
