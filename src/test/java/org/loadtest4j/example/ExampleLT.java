@@ -1,11 +1,9 @@
 package org.loadtest4j.example;
 
 import org.junit.Test;
-import org.junit.experimental.categories.Category;
 import org.loadtest4j.LoadTester;
 import org.loadtest4j.Request;
 import org.loadtest4j.Result;
-import org.loadtest4j.example.junit.LoadTest;
 import org.loadtest4j.factory.LoadTesterFactory;
 
 import java.time.Duration;
@@ -14,8 +12,7 @@ import java.util.List;
 
 import static org.assertj.core.api.SoftAssertions.assertSoftly;
 
-@Category(LoadTest.class)
-public class ExampleLoadTest {
+public class ExampleLT {
 
     private final LoadTester loadTester = LoadTesterFactory.getLoadTester();
 
