@@ -1,8 +1,6 @@
 package org.loadtest4j.example;
 
 import io.dropwizard.Application;
-import io.dropwizard.configuration.ResourceConfigurationSourceProvider;
-import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
 public class ExampleApplication extends Application<ExampleConfiguration> {
@@ -14,11 +12,6 @@ public class ExampleApplication extends Application<ExampleConfiguration> {
     @Override
     public String getName() {
         return "example";
-    }
-
-    @Override
-    public void initialize(final Bootstrap<ExampleConfiguration> bootstrap) {
-        bootstrap.setConfigurationSourceProvider(new ResourceConfigurationSourceProvider());
     }
 
     @Override

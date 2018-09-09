@@ -4,12 +4,7 @@
 
 A working example of loadtest4j.
 
-## Setup
-
-- Maven
-- Java 8+
-
-## Run
+## Usage
 
 ### In Maven
 
@@ -17,8 +12,10 @@ A working example of loadtest4j.
 # Runs all tests in development mode
 mvn verify
 
-# Runs load tests against the production Service Under Test
-# (test-compile compiles code and generates loadtest4j.properties)
+# Runs load tests against staging
+mvn test-compile surefire:test@load -P staging
+
+# Runs load tests against production
 mvn test-compile surefire:test@load -P production
 ```
 
