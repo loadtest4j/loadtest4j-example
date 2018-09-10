@@ -31,19 +31,20 @@
     </profiles>
 
     <build>
+        <!-- inject POM properties into loadtest4j.properties -->
+        <testResources>
+             <testResource>
+                 <filtering>true</filtering>
+                 <directory>src/test/resources</directory>
+             </testResource>
+         </testResources>
+        
         <plugins>
-            <!-- test grouping and loadtest4j configuration -->
+            <!-- test grouping -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
-                <configuration>
-                    <!-- loadtest4j configuration -->
-                    <systemPropertyVariables>
-                        <loadtest4j.driver.url>${loadtest4j.driver.url}</loadtest4j.driver.url>
-                        <loadtest4j.reporter.enabled>true</loadtest4j.reporter.enabled>
-                    </systemPropertyVariables>
-                </configuration>
                 <executions>
                     <!-- bind integration tests to integration-test phase -->
                     <execution>
