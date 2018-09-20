@@ -1,4 +1,4 @@
-package org.loadtest4j.example;
+package org.loadtest4j.examples.java;
 
 import io.dropwizard.testing.ResourceHelpers;
 import io.dropwizard.testing.junit.DropwizardAppRule;

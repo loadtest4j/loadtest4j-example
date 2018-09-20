@@ -1,4 +1,4 @@
-package org.loadtest4j.example;
+package org.loadtest4j.examples.java;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;

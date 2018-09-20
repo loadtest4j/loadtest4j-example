@@ -1,4 +1,4 @@
-package org.loadtest4j.example.driver;
+package org.loadtest4j.examples.java.driver;
 
 import org.loadtest4j.driver.Driver;
 import org.loadtest4j.driver.DriverFactory;

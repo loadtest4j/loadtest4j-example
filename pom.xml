@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.loadtest4j</groupId>
-    <artifactId>loadtest4j-example</artifactId>
+    <artifactId>loadtest4j-example-java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>A working example of loadtest4j.</description>
+    <description>A working example of loadtest4j in Java.</description>
 
     <!-- loadtest4j environments -->
     <profiles>
@@ -102,7 +102,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>org.loadtest4j.example.ExampleApplication</mainClass>
+                                    <mainClass>org.loadtest4j.examples.java.ExampleApplication</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

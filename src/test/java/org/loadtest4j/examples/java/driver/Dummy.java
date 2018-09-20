@@ -1,4 +1,4 @@
-package org.loadtest4j.example.driver;
+package org.loadtest4j.examples.java.driver;
 
 import org.glassfish.jersey.client.JerseyClientBuilder;
 import org.loadtest4j.driver.Driver;
