@@ -1,6 +1,6 @@
 # loadtest4j-example-java
 
-[![Build Status](https://travis-ci.com/loadtest4j/loadtest4j-example.svg?branch=master)](https://travis-ci.com/loadtest4j/loadtest4j-example)
+[![Build Status](https://travis-ci.com/loadtest4j/loadtest4j-example-java.svg?branch=master)](https://travis-ci.com/loadtest4j/loadtest4j-example-java)
 
 A working example of [loadtest4j](https://www.loadtest4j.org) in Java.
 
