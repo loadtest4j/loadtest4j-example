@@ -4,7 +4,6 @@ import org.loadtest4j.driver.DriverResponseTime;
 import org.loadtest4j.driver.DriverResult;
 
 import java.time.Duration;
-import java.util.Optional;
 
 class DummyResult implements DriverResult {
 
@@ -16,23 +15,23 @@ class DummyResult implements DriverResult {
         this.ko = ko;
     }
 
+    @Override
     public long getOk() {
         return ok;
     }
-    
+
+    @Override
     public long getKo() {
         return ko;
     }
-    
+
+    @Override
     public Duration getActualDuration() {
         return Duration.ZERO;
     }
-    
+
+    @Override
     public DriverResponseTime getResponseTime() {
         return new DummyResponseTime();
-    }
-    
-    public Optional<String> getReportUrl() {
-        return Optional.empty();
     }
 }

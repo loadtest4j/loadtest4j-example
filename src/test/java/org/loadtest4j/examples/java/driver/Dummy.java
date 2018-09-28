@@ -23,7 +23,8 @@ class Dummy implements Driver {
     Dummy(String url) {
         this.url = url;
     }
-    
+
+    @Override
     public DriverResult run(List<DriverRequest> requests) {
         final List<Invocation> invocations = build(requests);
 

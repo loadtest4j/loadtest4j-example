@@ -6,7 +6,7 @@ import java.time.Duration;
 
 class DummyResponseTime implements DriverResponseTime {
     @Override
-    public Duration getPercentile(int i) {
+    public Duration getPercentile(double i) {
         return Duration.ZERO;
     }
 }
